@@ -32,3 +32,7 @@ button.onclick = function () {
     img.src = arr[num].url;
     
 }
+
+// To Handel Screen Shoot 
+
+let screenButton = document.querySelector('.download');

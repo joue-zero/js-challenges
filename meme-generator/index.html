@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
     
-    <nav>
+    <nav id="container">
         <div class="container">
             <img src="images/Trollface.png" alt="Troll-Face">
             <h3 class="title">Meme Generator</h3>
@@ -23,11 +24,14 @@
         <button type="button">Get A New Meme Image</button>
     </form>
 
-    <div class="meme-cont">
+    <div class="meme-cont" id="meme-cont">
         <img src="images/troll-face.png" alt="Meme" class="meme-image">
         <p class="top">Hello</p>
         <p class="bottom">youssef</p>
     </div>
+    <!-- <button type="button" id="download" class="download">Download</button>
+    <div id="previewImage"></div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
