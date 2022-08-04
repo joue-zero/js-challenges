@@ -33,6 +33,4 @@ button.onclick = function () {
     
 }
 
-// To Handel Screen Shoot 
 
-let screenButton = document.querySelector('.download');
