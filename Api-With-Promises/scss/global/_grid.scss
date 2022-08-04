@@ -1,0 +1,60 @@
+
+@use "./varibles" as *;
+@use "../helpers/helper" as *;
+*{
+    box-sizing: border-box;
+}
+.container {
+    margin: {
+        right: auto;
+        left: auto;
+    }
+    padding: {
+        left: 15px;
+        right: 15px;
+    }
+}
+
+// col-
+@for $i from 1 through $col {
+    .col-#{$i}{
+        width: percentage($i / $col);
+    }
+}
+
+@include media(mobile){
+    @for $i from 1 through $col {
+        .col-s-#{$i}{
+            width: percentage($i / $col);
+        }
+    }
+}
+
+// Margin
+
+@for $i from 1 through 5 {
+    .m-#{$i} {
+        margin: 1rem * $i;
+    }
+    .mr-#{$i} {
+        margin: {
+            right: 1rem * $i;;
+        } 
+    }
+    .mt-#{$i} {
+        margin: {
+            top: 1rem * $i;;
+        } 
+    }
+    .mb-#{$i} {
+        margin: {
+            bottom: 1rem * $i;;
+        } 
+    }
+    .ml-#{$i} {
+        margin: {
+            left: 1rem * $i;;
+        } 
+    }
+
+}

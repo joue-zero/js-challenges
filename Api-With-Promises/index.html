@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <h2>Dealing with api to search for country with option</h2>
+
+    <div class="container">
+        <div class="search-box">
+            <div class="select col-6 col-s-12">
+                <select name="" id="option">
+                    <option value="name">Name</option>
+                    <option value="lang">Language</option>
+                    <option value="currency">Currency</option>
+                    <option value="region">Region</option>
+                </select>
+            </div>
+            <input type="text" id="name" class="input-box col-6 col-s-12">
+            <button type="button" class="">Search</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="options">
+            <ul>
+                <li data-show="all" class="active">Full</li>
+                <li data-show="flag">Flag</li>
+                <li data-show="name">Name</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

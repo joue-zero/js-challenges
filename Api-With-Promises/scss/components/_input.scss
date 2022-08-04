@@ -1,0 +1,8 @@
+
+@use "../global/varibles" as *;
+.input-box {
+    border: 2px solid $main-color;
+    padding: 20px 10px;
+    font-size: 18px;
+    height: 40px;
+}
