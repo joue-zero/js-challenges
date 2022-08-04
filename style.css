@@ -22,7 +22,6 @@ ul {
 }
 
 ul li {
-    padding: 10px;
     cursor: pointer;
     background-color: #2B4865;
     transition: .3s;
@@ -36,4 +35,6 @@ ul li:hover {
 ul li a {
     text-decoration: none;
     color: #FFF;
+    padding: 10px;
+    display: inline-block;
 }
