@@ -12,7 +12,25 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+    <div class="pop">
+        <div class="overlay"></div>
+        <div class="pop-up">
+            <p class="message">
+                <span class="mess"></span>
+                <span class="from">[15]</span>
+                Out Of
+                <span class="to">[20]</span>
+                <br/>
+                Percentage:
+                <span class="perc">[20]</span>
+            </p>
+            <div class="opt">
+                <span class="show-answer">Show Answers</span>
+                <span class="try-again">Try Again</span>
+            </div>
+        </div>
+        
+    </div>
     <h1>Quiz Application</h1>
     <div class="box-container">
 
@@ -21,36 +39,12 @@
             <p class="question">Question: <span id="cat-count">15</span></p>
         </div>
 
-        <div class="content">
-            <h2 class="ques-name">Why This Usfel</h2>
-            <div class="options">
-                <ul>
-                    <li class="active">
-                        <input name="q" type="radio" id="q-1">
-                        <label for="q-1">Name</label>
-                    </li>
-                    <li>
-                        <input name="q" type="radio" id="q-2">
-                        <label for="q-2">Name</label>
-                    </li>
-                    <li>
-                        <input name="q" type="radio" id="q-3">
-                        <label for="q-3">Name</label>
-                    </li>
-                    <li>
-                        <input name="q" type="radio" id="q-4">
-                        <label for="q-4">Name</label>
-                    </li>
-                </ul>
-            </div>
+        <div class="content-container">
         </div>
         <button type="button" id="submit" class="disabled">Submit Awnswer</button>
 
         <div class="controles">
             <ul class="">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
             </ul>
             <div class="timer">
                 00:03
