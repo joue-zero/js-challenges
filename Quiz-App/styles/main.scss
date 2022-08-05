@@ -1,0 +1,137 @@
+
+// Variables
+$bg-color: #EEE;
+$bg-secondry-color: #FFF;
+$main-color: #03a9f4;
+$font: 16px;
+$padding: 15px;
+
+// Globals
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+// Helpers 
+/* Add Background and Padding for the item*/
+@mixin padding-background($back-ground, $p: $padding) {
+    background-color: $back-ground;
+    padding: $p;
+}
+@mixin media($media){
+    @if $media == mobile{
+        @media(max-width: 767px){
+            @content;
+        }
+    }
+    // 
+    @else {
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+}
+// ===================================
+// Start Heading 
+h1 {
+    text-align : center;
+}
+// Start box-container
+.box-container {
+    margin: 50px auto;
+    @include media(mobile) {
+        width: 95%;
+    }
+    @include media(large) {
+        width: 600px;
+    }
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    padding: $padding;
+    .heading {
+        @include padding-background($bg-secondry-color);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        @include padding-background($bg-secondry-color);
+        margin: {
+            top: $padding;
+            bottom: $padding;
+        }
+        .ques-name {
+            
+        }
+        .options {
+            @include padding-background($bg-color, 0);
+            margin-top: $padding;
+            li {
+                padding: $padding;
+                cursor: pointer;
+                transition: .3s;
+                &.active, &:hover  {
+                    color: $main-color;
+                    font-weight: bold;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid #CCC;
+                }
+            }
+            label {
+                margin-left: 5px
+            }
+        }
+    }
+    
+    button {
+        @include padding-background($main-color, 8px);
+        border: none;
+        cursor: pointer;
+        color : #FFF;
+        margin-bottom: $padding;
+        border-radius: 5px;
+        &.disabled{
+            background-color: mix($bg-color, rgb(54, 51, 51));
+        }
+    }
+
+    .controles {
+        @include padding-background($bg-secondry-color);
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+
+            li {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 5px;
+                background-color: mix($bg-color, rgb(54, 51, 51));
+                &.active {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+// Sart Footer
+footer {
+    text-align: center;
+    padding-bottom: $padding;
+    span {
+        font-weight: bold;
+        color: $main-color
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    
+    <h1>Quiz Application</h1>
+    <div class="box-container">
+
+        <div class="heading">
+            <p class="category">Category: <span id="cat-name">Html</span></p>
+            <p class="question">Question: <span id="cat-count">15</span></p>
+        </div>
+
+        <div class="content">
+            <h2 class="ques-name">Why This Usfel</h2>
+            <div class="options">
+                <ul>
+                    <li class="active">
+                        <input name="q" type="radio" id="q-1">
+                        <label for="q-1">Name</label>
+                    </li>
+                    <li>
+                        <input name="q" type="radio" id="q-2">
+                        <label for="q-2">Name</label>
+                    </li>
+                    <li>
+                        <input name="q" type="radio" id="q-3">
+                        <label for="q-3">Name</label>
+                    </li>
+                    <li>
+                        <input name="q" type="radio" id="q-4">
+                        <label for="q-4">Name</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button type="button" id="submit" class="disabled">Submit Awnswer</button>
+
+        <div class="controles">
+            <ul class="">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="timer">
+                00:03
+            </div>
+        </div>
+    </div>
+    <footer>
+        Made With Love By <span>Youssef Elnaggar</span>
+    </footer>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

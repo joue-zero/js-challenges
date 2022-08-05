@@ -1,0 +1,127 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Add Background and Padding for the item*/
+h1 {
+  text-align: center;
+}
+
+.box-container {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EEE;
+  padding: 15px;
+}
+@media (max-width: 767px) {
+  .box-container {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  .box-container {
+    width: 600px;
+  }
+}
+.box-container .heading {
+  background-color: #FFF;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box-container .content {
+  background-color: #FFF;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.box-container .content .options {
+  background-color: #EEE;
+  padding: 0;
+  margin-top: 15px;
+}
+.box-container .content .options li {
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.box-container .content .options li.active, .box-container .content .options li:hover {
+  color: #03a9f4;
+  font-weight: bold;
+}
+.box-container .content .options li:not(:last-child) {
+  border-bottom: 1px solid #CCC;
+}
+.box-container .content .options label {
+  margin-left: 5px;
+}
+.box-container button {
+  background-color: #03a9f4;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.box-container button.disabled {
+  background-color: #929191;
+}
+.box-container .controles {
+  background-color: #FFF;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box-container .controles ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box-container .controles ul li {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #929191;
+}
+.box-container .controles ul li.active {
+  background-color: #03a9f4;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 15px;
+}
+footer span {
+  font-weight: bold;
+  color: #03a9f4;
+}
