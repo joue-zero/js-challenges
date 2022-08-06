@@ -5,7 +5,7 @@ let contentContainer = document.querySelector('.content-container');
 // Get The Data
 
 (function connect() {
-    fetch("../data/lang1.json")
+    fetch("data/lang1.json")
     .then((data) => {
         return data.json();
     }).then((data) => {
