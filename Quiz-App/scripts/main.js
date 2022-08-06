@@ -6,7 +6,7 @@ let contentContainer = document.querySelector('.content-container');
 
 (function connect() {
 document.body.innerHTML = window.location.href;
-    fetch("data/lang1.json")
+    fetch(`${window.location.href}/data/lang1.json`)
     .then((data) => {
         return data.json();
     }).then((data) => {
